@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-Calculator</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style day.css">
+</head>
+<body>
+     <!-- Navbar -->
+<nav class="navbar bg-body-tertiary navbar-expand-lg position-absolute w-100 z-1 ">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <p class="navbar-brand text-primary fw-bold">Calculator</p>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center justify-content-evenly gap-3">
+        <li class="nav-item">
+         <li class="nav-item">
+          <a class="nav-link text-primary fw-medium" href="./index.html">Home</a>
+        </li>
+          <a class="nav-link active text-primary fw-medium" aria-current="page" href="./scientificCalculator.html">Scientific calculator</a>
+        </li>
+        <li class="nav-item text-primary">
+          <a class="nav-link text-primary fw-medium" href="./basicCalculator.html">Basic Calculator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary fw-medium" href="#">Day Calculator</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar -->
+<div class="height d-flex align-items-center justify-content-center rounded-1">
+<div class="bg-inner height-inner px-4 py-4 border-black border-1">
+<h4 class="fw-bold text-black">Day Finder</h4>
+<div class="d-flex align-items-start justify-content-center flex-column gap-3">
+<div class="underline bg-black"></div>
+<input type="text" inputmode="numeric" placeholder="yyyy-mm-dd" required
+ class="form-control text-center" id="input-day">
+<button class="fw-bold text-white bg-success border-day rounded-1" id="find-day">Find Your Day</button>
+<button class="btn-reset d-flex align-items-center text-white 
+justify-content-center bg-danger fw-bold rounded-1" id="reset">Reset</button>
+<i class="bi bi-calender-day-fill"></i>
+<span class="fw-bold text-black" id="result">Your Day -</span>
+<div class="underline bg-black"></div>
+<p>@all rights are reserved by Day-Calculator</p>
+</div>
+</div>
+</div>
+<script src="./java script/cal.js"></script> 
+<script src="./java script/day.js"></script>
+</body>
+</html>

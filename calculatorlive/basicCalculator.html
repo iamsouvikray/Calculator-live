@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator-Project</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style basic cal.css">
+</head>
+<body>
+     <!-- Navbar section -->
+<nav class="navbar bg-body-tertiary navbar-expand-lg position-absolute w-100 z-1 ">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <p class="navbar-brand text-primary fw-bold">Calculator</p>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center justify-content-evenly gap-3">
+        <li class="nav-item">
+            <li class="nav-item">
+          <a class="nav-link text-primary fw-medium" href="./index.html">Home</a>
+        </li>
+          <a class="nav-link active text-primary fw-medium" aria-current="page" href="./scientificCalculator.html">Scientific calculator</a>
+        </li>
+        <li class="nav-item text-primary">
+          <a class="nav-link text-primary fw-medium" href="#">Basic Calculator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary fw-medium" href="./dayCalculator.html">Day Calculator</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar -->
+<div class="bg-calculator  height d-flex align-items-center justify-content-center rounded-1">     
+<div class="bg-white height-inner px-4 py-4">
+<div class="d-flex align-items-start justify-content-start flex-column border-2 gap-1">
+<p class="fs-6 fw-bold text-black">Enter first number</p>
+<input type="text" inputmode="numeric" placeholder="First number" required class="form-control text-center" id="input1">
+<p class="fs-6 fw-bold text-black">Enter second number</p>
+<input type="text" inputmode="numeric" placeholder="Second number" required class="form-control text-center" id="input2">
+<p class="fs-6 fw-bold text-black">Answer</p>
+<input type="text" placeholder="Result" disabled class="form-control text-center" id="result">
+</div>
+<div class="mt-5 d-flex align-items-center justify-content-evenly border-1 gap-1">
+    <button class="btn-operators btn-color bg-white fw-bold  px-3 border-black" onclick="plus()">+</button>
+    <button class="btn-operators btn-color bg-white fw-bold  px-3 border-black" onclick="minus()">-</button>
+    <button class="btn-operators btn-color bg-white fw-bold  px-3 border-black" onclick="mul()">*</button>
+    <button class=" btn-operators btn-color bg-white fw-bold px-3 border-black" onclick="mul()">*</button>
+    <button class=" btn-operators btn-color bg-white fw-bold  px-3 border-black" onclick="div()">/</button>
+</div>
+<div class="mt-3 d-flex align-items-center justify-content-evenly border-2 gap-1">
+    <button class="btn-operators btn-color bg-white fw-bold px-3 border-black" onclick="mod()">%</button>
+    <button class="btn-operators btn-color bg-white fw-bold px-3 border-black" onclick="pow()">**</button>
+    <button class="btn-operators btn-color d-flex align-items-center justify-content-center bg-white fw-bold px-3 border-black" onclick="sqr()">x^2</button>
+    <button class="btn-operators btn-color d-flex align-items-center justify-content-center bg-white fw-bold px-3 border-black" onclick="inv()">1/x</button>
+</div>
+<div class="d-flex align-items-center justify-content-evenly mt-5"> 
+<button class="btn-reset bg-danger align-items-center justify-content-center btn-color text-white fw-bold px-3" onclick="reset()">Reset</button>
+</div>
+</div>
+    </div>
+   <script src="./java script/bootstrap.bundle.js"></script> 
+   <script src="./java script/basic calculate.js"></script>
+</body>
+</html>

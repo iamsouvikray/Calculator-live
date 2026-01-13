@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden m-0 p-0 w-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Calculator</title>
+    <!-- css inclusion -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="overflow-x-hidden m-0 p-0 w-100 overflow-y-auto">
+    <!-- Navbar -->
+<nav class="navbar bg-body-tertiary navbar-expand-lg position-absolute w-100 z-1 ">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <p class="navbar-brand text-primary fw-bold">Calculator</p>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center justify-content-evenly gap-4">
+        <li class="nav-item">
+          <li class="nav-item">
+          <a class="nav-link text-primary fw-medium" href="./index.html">Home</a>
+        </li>
+          <a class="nav-link active text-primary fw-medium" aria-current="page" href="#">Scientific calculator</a>
+        </li>
+        <li class="nav-item text-primary">
+          <a class="nav-link text-primary fw-medium" href="./basicCalculator.html">Basic Calculator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary fw-medium" href="./dayCalculator.html">Day Calculator</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar -->
+<div class="bg-background d-lg-flex justify-content-around align-items-center text-center mt-5 gap-5">
+    <div class="container-lg container-md content d-flex justify-content-center align-items-center flex-column mb-5 rounded-3 shadow gap-3">
+        <h2 class="fw-bold text-white size text-start">Scientific-Calculator</h2>
+        <i class="text-start text-white">
+A basic scientific calculator with limited functions such as addition (+), subtraction (–), multiplication (×), division (÷), percentage (%), and reciprocal (1/x) is designed to perform essential mathematical calculations with accuracy and speed. Even though it does not include advanced functions like trigonometry or logarithms, it is highly useful for everyday mathematical tasks, school-level calculations, and general problem-solving.
+
+The addition and subtraction keys allow users to perform simple arithmetic operations. Multiplication and division help in solving numeric expressions, ratios, and scaling problems. The percentage (%) function is particularly helpful for calculating discounts, interest, tax, profit–loss, and comparisons. The reciprocal key (1/x) allows the user to quickly find the inverse of a number, which is useful in fraction calculations, division shortcuts, and solving basic algebraic expressions.
+
+Such calculators usually include a clear (C) button to reset the display, ensuring error-free calculations. They often have a simple, easy-to-read screen and responsive keys that make them user-friendly. Although limited compared to full scientific calculators, they are efficient, reliable, and ideal for students and users who need fast arithmetic and percentage-based calculations in daily life.
+
+
+</i>
+    </div>
+<div class="inner-height container-md pt-3 rounded-3 shadow me-5">
+<p class="text-white fw-bold">Calculator</p>
+<div class="underline bg-white mt-3 d-flex align-items-center justify-content-center ms-4 rounded-1" id="display"></div>
+<div class="mt-5 d-flex align-items-center justify-content-evenly border-1 gap-1">
+    <button class="btn-operators num-btn bg-white fw-bold  px-3 shadow">7</button>
+    <button class="btn-operators num-btn bg-white fw-bold  px-3 shadow">8</button>
+    <button class="btn-operators num-btn bg-white fw-bold  px-3 shadow">9</button>
+    <button class=" btn-operators num-btn bg-white fw-bold px-3 shadow">*</button>
+</div>
+<div class="mt-3 d-flex align-items-center justify-content-evenly border-2 gap-1">
+    <button class="btn-operators num-btn bg-white fw-bold px-3  shadow">4</button>
+    <button class="btn-operators num-btn bg-white fw-bold px-3  shadow">5</button>
+    <button class="btn-operators num-btn d-flex align-items-center justify-content-center bg-white fw-bold px-3
+     shadow">6</button>
+    <button class="btn-operators num-btn d-flex align-items-center justify-content-center bg-white 
+    fw-bold px-3 shadow" >-</button>
+</div>
+<div class="mt-3 d-flex align-items-center justify-content-evenly border-2 gap-1">
+    <button class="btn-operators num-btn bg-white fw-bold px-3  shadow">1</button>
+    <button class="btn-operators num-btn bg-white fw-bold px-3  shadow">2</button>
+    <button class="btn-operators num-btn d-flex align-items-center justify-content-center
+     bg-white fw-bold px-3
+     shadow">3</button>
+    <button class="btn-operators num-btn d-flex align-items-center justify-content-center bg-white 
+    fw-bold px-3 border-black shadow">+</button>
+</div>
+<div class="mt-3 d-flex align-items-center justify-content-evenly border-2 gap-1">
+    <button class="btn-operators-c num-btn fw-bold text-white">C</button>
+    <button class="btn-operators num-btn bg-white fw-bold px-3  shadow">X</button>
+    <button class="btn-operators num-btn d-flex align-items-center justify-content-center bg-white fw-bold px-3
+     shadow">%</button>
+    <button class="btn-operators num-btn d-flex align-items-center justify-content-center bg-white 
+    fw-bold px-3  shadow">/</button>
+</div>
+<div class="mt-3 d-flex align-items-center justify-content-evenly border-2 gap-1">
+    <button class="btn-operators num-btn bg-white fw-bold px-3  d-flex align-items-center justify-content-center shadow">1/x</button>
+    <button class="btn-operators num-btn bg-white fw-bold px-3  shadow">0</button>
+    <button class="btn-operators num-btn d-flex align-items-center justify-content-center bg-white fw-bold px-3
+     \ shadow">.</button>
+    <button class="btn-operators-e num-btn d-flex align-items-center justify-content-center text-white 
+    fw-bold px-3">=</button>
+</div>
+</div>
+</div>
+
+    <!-- Java script inclusion -->
+  <script src="./java script/bootstrap.bundle.js"></script>  
+  <script src="./java script/cal.js"></script>
+</body>
+</html>

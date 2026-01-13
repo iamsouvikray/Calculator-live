@@ -1,0 +1,75 @@
+/* UNIVERSAL FONT + BLACK TEXT */
+* {
+    font-family: 'Poppins', sans-serif;
+    color: #000000 !important;
+}
+
+
+/* outer background work */
+.bg-calculator{
+    background-image: linear-gradient(to bottom,white 0%, rgba(20, 20, 203, 0.345));
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.height{
+    height: 100dvh;
+}
+/* Outer background end */
+
+/* Inner box */
+.height-inner{
+    height: 535px;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.2);
+    background:transparent;
+    border-radius: 10px;
+    appearance: none;
+}
+/* Inner box */
+
+/* Button */
+.btn-operators{
+    height: 40px;
+    width: 50px;
+    border-radius: 5px;
+    text-align: center;
+    border:1px solid black;
+    color:black;
+}
+.btn-operators:hover{
+     color:white;
+     background-image: linear-gradient(45deg,blue);
+     border:none;
+     opacity: 0.75;
+}
+/* Button ends */
+
+/* Reset work */
+.btn-reset{
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    text-align: center;
+    color:black;
+}
+.btn-reset:hover{
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    text-align: center;
+    background-image: linear-gradient(45deg,blue);
+    cursor: pointer;
+    opacity: 0.75;
+    border:none;
+    color:white !important;
+}
+/* Reset ends */
+
+/* For mob work */
+@media (max-width:320px){
+   .height-inner{
+        height: 525px;
+        width: 280px;
+   } 
+}

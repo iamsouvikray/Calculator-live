@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator-Project</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/home.css">
+
+    <!-- Splide CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/css/splide.min.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar bg-body-tertiary navbar-expand-lg position-absolute w-100 z-1">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <p class="navbar-brand text-primary fw-bold">Calculator</p>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center gap-3">
+        <li class="nav-item">
+          <a class="nav-link text-primary fw-medium" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary fw-medium" href="./scientificCalculator.html">Scientific calculator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-primary fw-medium" href="./basicCalculator.html">Basic Calculator</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary fw-medium" href="./dayCalculator.html">Day Calculator</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar END -->
+
+
+<!-- Slider Section -->
+<div id="image-slider" class="splide center-slider">
+  <div class="splide__track container">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <img src="./ASSET/calculator-scientific-calculator-graphing-calculator-basic-calculator-online-calculator-calcula_980716-16579.avif">
+         <h2 class="slide-title text-black mt-2">Scientific Calculator</h2>
+         <p class="slide-text"><p>A powerful scientific calculator designed for students and professionals. </p>
+            <p>Perform complex operations like trigonometry, logarithms, powers, </p>
+            <p>inverse calculations, and more with high accuracy.</p></p>
+    </li>
+
+      <li class="splide__slide">
+        <img src="./ASSET/date-calculator.png">
+        <h2 class="slide-title text-black mt-2">Day Calculator</h2>
+          <p class="slide-text"><p>Quickly calculate the number of days between two dates.</p> 
+           <p> Useful for planning events, deadlines, age calculation, </p>
+           <p> project timelines, and important schedules.</p></p>
+</p>
+      </li>
+
+      <li class="splide__slide">
+        <img src="./ASSET/scientific calculator.png">
+        <h2 class="slide-title text-black mt-2">Basic Calculator</h2>
+          <p class="slide-text"><p>A simple and easy-to-use calculator for everyday math. </p>
+            <p>Handle basic operations like addition, subtraction, multiplication, </p>
+           <p>division, percentage, and inverse values effortlessly.</p></p>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- Slider End -->
+<!-- Splide JS -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide/dist/js/splide.min.js"></script>
+
+<script src="./java script/home.js"></script>
+<script src="./java script/bootstrap.bundle.js"></script>
+
+</body>
+</html>
